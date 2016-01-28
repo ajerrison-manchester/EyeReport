@@ -63,5 +63,37 @@
     <splash src="resources\ios\splash\Default@2x~iphone.png" width="640" height="960"/>
     <splash src="resources\ios\splash\Default~iphone.png" width="320" height="480"/>
   </platform>
-  <icon src="resources\icon.png"/>
+  <icon src="resources\ios\icon\icon-small@3x.png"/>
+
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/notification"/>
+  <feature name="http://api.phonegap.com/1.0/device"/>
+  <feature name="http://api.phonegap.com/1.0/camera"/>
+ 
+
+  
+  <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+  <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+  <gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+  
+  <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+  <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+  
+
+  <feature name="Device">
+    <param name="android-package" value="org.apache.cordova.device.Device" />
+
+  </feature>
+
+  <feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+  </feature>
+
+  <feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+  </feature>
+
+  
+
+
 </widget>
