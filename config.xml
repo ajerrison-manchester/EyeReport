@@ -10,7 +10,7 @@
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="permissions" value="none"/>
-  <preference name="phonegap-version" value="3.7.0"/>
+  <preference name="phonegap-version" value="cli-5.2.0"/>
   <preference name="Orientation" value="portrait"/>
   <preference name="ios-statusbarstyle" value="black-opaque"/>
   <preference name="target-device" value="handset"/>
