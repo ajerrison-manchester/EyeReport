@@ -33,6 +33,16 @@
         });
     };
 
+    $scope.openModalTest = function () {
+        $ionicModal.fromTemplateUrl('templates/modal-test.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.modal = modal;
+            $scope.modal.show();
+        });
+    };
+
     $scope.closeModal = function () {
         $scope.modal.remove();
     };
