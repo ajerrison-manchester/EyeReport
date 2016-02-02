@@ -1,20 +1,16 @@
 ﻿<ion-modal-view class="irk-modal">
-  <ion-content>
-  
-      <form name="mrForm" class="irk-slider" novalidate>
-                    <div class="irk-centered">
-                    <div class="irk-text-centered">
+ 
+  <irk-ordered-tasks>
+  <irk-task>
+     <irk-test id="t2"  text="This is not required so you can skip this." min="1" max="10" step="1" value="5" min-text="Low" max-text="High"/>
+      </irk-task>
 
-      <div class="item range">
-  <i class="icon ion-volume-low"></i>
-  <input type="range" name="volume" min="0" max="100" value="35" step="5">
-  <i class="icon ion-volume-high"></i>
-</div>
+       <irk-task>
+    <irk-scale-question-step id="q2" title="A scale question." text="This is not required so you can skip this." min="1" max="10" step="1" value="5" min-text="Low" max-text="High"/>
+  </irk-task>
 
-                        </div>
-                        </div>
-          </form>
 
-      </ion-content>
+      </irk-ordered-tasks>
+    
 
     </ion-modal-view>
