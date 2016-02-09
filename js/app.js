@@ -41,6 +41,16 @@ angular.module('eyereport', ['ionic', 'ionicResearchKit', 'eyereport.controllers
 
     // Each tab has its own nav history stack:
 
+        .state('tab.eye', {
+            url: '/eye',
+            views: {
+                'tab-eye': {
+                    templateUrl: 'templates/tab-eye.html',
+                    controller: 'StepsCtrl'
+                }
+            }
+        })
+
     .state('tab.steps', {
         url: '/steps',
         views: {
@@ -72,7 +82,7 @@ angular.module('eyereport', ['ionic', 'ionicResearchKit', 'eyereport.controllers
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/steps');
+    $urlRouterProvider.otherwise('/tab/eye');
 
 })
 

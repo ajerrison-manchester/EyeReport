@@ -13,3 +13,25 @@ button.choice-food-pizza {
 .custom-ionic {
   background-image: url(../img/ionic.png);
 }
+
+.eyeImage {
+    width:100%;
+    max-width:320px;
+}
+
+.title-centred {
+    text-align:center;
+
+}
+
+.title-content {
+    background-color:#660099;
+}
+
+.item .title-text  {
+    font-size:large;
+}
+
+button.irk-icon-small:before {
+  font-size: 30px !important;
+}

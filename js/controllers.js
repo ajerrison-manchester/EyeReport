@@ -13,6 +13,16 @@
         });
     };
 
+    $scope.openModalEye = function () {
+        $ionicModal.fromTemplateUrl('templates/modal-eye.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function (modal) {
+            $scope.modal = modal;
+            $scope.modal.show();
+        });
+    };
+
     $scope.openModalConsent = function () {
         $ionicModal.fromTemplateUrl('templates/modal-consent.html', {
             scope: $scope,
