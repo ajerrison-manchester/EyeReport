@@ -77,6 +77,8 @@
     $scope.results = irkResults.getResults();
 
     $scope.CLDEQTotal = irkResults.sumIDResults("cldeq");
+
+    $scope.noPhotoResults = irkResults.getAllNoPhotoResults();
 }])
 
 
