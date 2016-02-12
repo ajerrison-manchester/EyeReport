@@ -51,6 +51,16 @@ angular.module('eyereport', ['ionic', 'ionicResearchKit', 'eyereport.controllers
             }
         })
 
+        .state('tab.about', {
+                url: '/about',
+                views: {
+                    'tab-about': {
+                        templateUrl: 'templates/tab-about.html',
+                        controller: 'AboutCtrl'
+                    }
+                }
+     })
+
     .state('tab.steps', {
         url: '/steps',
         views: {

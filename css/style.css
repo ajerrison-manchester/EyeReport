@@ -10,6 +10,48 @@ button.choice-food-pizza {
 	background-image: url(../img/food-pizza.png) !important;
 }
 
+button.choice-verysad {
+	background-image: url(../img/verysad.png) !important;
+}
+
+button.choice-sad {
+	background-image: url(../img/sad.png) !important;
+}
+
+button.choice-OKface {
+	background-image: url(../img/OKface.png) !important;
+}
+
+button.choice-happy {
+	background-image: url(../img/happy.png) !important;
+}
+
+button.choice-veryhappy {
+	background-image: url(../img/veryhappy.png) !important;
+}
+
+
+button.choice-verysad-sel {
+	background-image: url(../img/verysad-sel.png) !important;
+}
+
+button.choice-sad-sel {
+	background-image: url(../img/sad-sel.png) !important;
+}
+
+button.choice-OKface-sel {
+	background-image: url(../img/OKface-sel.png) !important;
+}
+
+button.choice-happy-sel {
+	background-image: url(../img/happy-sel.png) !important;
+}
+
+button.choice-veryhappy-sel {
+	background-image: url(../img/veryhappy-sel.png) !important;
+}
+
+
 .custom-ionic {
   background-image: url(../img/ionic.png);
 }
@@ -17,6 +59,20 @@ button.choice-food-pizza {
 .eyeImage {
     width:100%;
     max-width:320px;
+}
+
+.photoDiv {
+      text-align:center;
+      display:block;
+      width:100%;
+}
+
+.photoImage {
+    max-width: 50%;
+    max-height:50%;
+    
+  
+
 }
 
 .title-centred {

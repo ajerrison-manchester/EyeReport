@@ -4,6 +4,12 @@
   		<div class="item item-text-wrap" ng-if="!results">
   			Launch the sample Survey and Consent to see the results.
   		</div>
+
+        <div class="item item-text-wrap" ng-if="results">
+  			
+    			CLDEQ score: {{CLDEQTotal}}
+    		
+  		</div>
   		<div class="item item-text-wrap" ng-if="results">
   			<pre>
     			{{results | json}}

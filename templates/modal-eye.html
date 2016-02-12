@@ -1,6 +1,13 @@
 ﻿<ion-modal-view class="irk-modal">
 
 <irk-ordered-tasks>
+
+   
+
+  <irk-task>
+    <irk-photo-step id="photo2" title="Photo" text="Please take a photograph of your eyes." button-text="Take Photo"  optional="false" />
+  </irk-task>
+
   <irk-task>
     <irk-numeric-question-step id="eye1" title="What is the comfort of your contact lenses (1-100)?"  min="1" max="100"  />
   </irk-task>
@@ -11,37 +18,17 @@
 
 <irk-task>
     <irk-image-choice-question-step id="eye3" title="What is the comfort of your contact lenses?" text="Select an image.">
-      <irk-image-choice text="Very Sad" value="verysad" normal-state-image="ion-android-sad" selected-state-image="ion-android-sad" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Sad" value="sad" normal-state-image="ion-sad-outline" selected-state-image="ion-sad" type="smallicon"></irk-image-choice>
-        <irk-image-choice text="OK" value="OK" normal-state-image="ion-eye" selected-state-image="ion-eye" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Happy" value="happy" normal-state-image="ion-happy-outline" selected-state-image="ion-happy" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Very Happy" value="veryhappy" normal-state-image="ion-android-happy" selected-state-image="ion-android-happy" type="smallicon"></irk-image-choice>
+      <irk-image-choice text="Very Sad" value="verysad" type="image" normal-state-image="choice-verysad" selected-state-image="choice-verysad-sel" ></irk-image-choice>
+      <irk-image-choice text="Sad" value="sad" type="image" normal-state-image="choice-sad" selected-state-image="choice-sad-sel" ></irk-image-choice>
+        <irk-image-choice text="OK" value="OK" type="image" normal-state-image="choice-OKface" selected-state-image="choice-OKface-sel" ></irk-image-choice>
+      <irk-image-choice text="Happy" value="happy" type="image" normal-state-image="choice-happy" selected-state-image="choice-happy-sel" ></irk-image-choice>
+      <irk-image-choice text="Very Happy" value="veryhappy" type="image" normal-state-image="choice-veryhappy" selected-state-image="choice-veryhappy-sel" ></irk-image-choice>
     </irk-image-choice-question-step>
   </irk-task>
 
 
 <irk-task>
-    <irk-value-picker-question-step id="eye4" title="Eye Discomfort Q1" text="During a typical day in the past 2 weeks, how often did your eyes feel discomfort while wearing your contact lenses?" style="single" optional="false">
-      <irk-picker-choice text="Never" value="0" ></irk-picker-choice>
-      <irk-picker-choice text="Rarely" value="1"></irk-picker-choice>
-      <irk-picker-choice text="Sometimes" value="2" ></irk-picker-choice>
-        <irk-picker-choice text="Frequently" value="3" ></irk-picker-choice>
-        <irk-picker-choice text="Constantly" value="4" ></irk-text-choice>
-    </irk-value-picker-question-step>
-  </irk-task>
-
-    <irk-task>
-    <irk-image-choice-question-step id="eye5" title="Eye Discomfort Q2" text="When your eyes felt discomfort with your contact lenses, how intense was this feeling of discomfort at the end of your wearing time? Please skip if you had no discomfort at all.">
-      <irk-image-choice text="Very Intense" value="5" normal-state-image="ion-android-sad" selected-state-image="ion-android-sad" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Intense" value="4" normal-state-image="ion-sad-outline" selected-state-image="ion-sad" type="smallicon"></irk-image-choice>
-        <irk-image-choice text="OK" value="3" normal-state-image="ion-eye" selected-state-image="ion-eye" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Not Very Intense" value="2" normal-state-image="ion-happy-outline" selected-state-image="ion-happy" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Not At All Intense" value="1" normal-state-image="ion-android-happy" selected-state-image="ion-android-happy" type="smallicon"></irk-image-choice>
-    </irk-image-choice-question-step>
-  </irk-task>
-
-    <irk-task>
-    <irk-value-picker-question-step id="eye6" title="Eye Dryness Q1" text="During a typical day in the past 2 weeks, how often did your eyes feel dry?" style="single" optional="false">
+    <irk-value-picker-question-step id="cldeq4" title="Eye Discomfort Q1" text="During a typical day in the past 2 weeks, how often did your eyes feel discomfort while wearing your contact lenses?" style="single" optional="false">
       <irk-picker-choice text="Never" value="0" ></irk-picker-choice>
       <irk-picker-choice text="Rarely" value="1"></irk-picker-choice>
       <irk-picker-choice text="Sometimes" value="2" ></irk-picker-choice>
@@ -51,17 +38,37 @@
   </irk-task>
 
     <irk-task>
-    <irk-image-choice-question-step id="eye7" title="Eye Dryness Q2" text="When your eyes felt dry, how intense was this feeling of dryness at the end of your wearing time? Please skip if you had no dryness at all.">
-      <irk-image-choice text="Very Intense" value="5" normal-state-image="ion-android-sad" selected-state-image="ion-android-sad" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Intense" value="4" normal-state-image="ion-sad-outline" selected-state-image="ion-sad" type="smallicon"></irk-image-choice>
-        <irk-image-choice text="OK" value="3" normal-state-image="ion-eye" selected-state-image="ion-eye" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Not Very Intense" value="2" normal-state-image="ion-happy-outline" selected-state-image="ion-happy" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Not At All Intense" value="1" normal-state-image="ion-android-happy" selected-state-image="ion-android-happy" type="smallicon"></irk-image-choice>
+    <irk-image-choice-question-step id="cldeq5" title="Eye Discomfort Q2" text="When your eyes felt discomfort with your contact lenses, how intense was this feeling of discomfort at the end of your wearing time? Please skip if you had no discomfort at all.">
+      <irk-image-choice text="Very Intense" value="5" type="image" normal-state-image="choice-verysad" selected-state-image="choice-verysad-sel"></irk-image-choice>
+      <irk-image-choice text="Intense" value="4" type="image" normal-state-image="choice-sad" selected-state-image="choice-sad-sel" ></irk-image-choice>
+        <irk-image-choice text="OK" value="3" type="image" normal-state-image="choice-OKface" selected-state-image="choice-OKface-sel"></irk-image-choice>
+      <irk-image-choice text="Not Very Intense" value="2" type="image" normal-state-image="choice-happy" selected-state-image="choice-happy-sel"></irk-image-choice>
+      <irk-image-choice text="Not At All Intense" value="1" type="image" normal-state-image="choice-veryhappy" selected-state-image="choice-veryhappy-sel"></irk-image-choice>
+    </irk-image-choice-question-step>
+  </irk-task>
+
+    <irk-task>
+    <irk-value-picker-question-step id="cldeq6" title="Eye Dryness Q1" text="During a typical day in the past 2 weeks, how often did your eyes feel dry?" style="single" optional="false">
+      <irk-picker-choice text="Never" value="0" ></irk-picker-choice>
+      <irk-picker-choice text="Rarely" value="1"></irk-picker-choice>
+      <irk-picker-choice text="Sometimes" value="2" ></irk-picker-choice>
+        <irk-picker-choice text="Frequently" value="3" ></irk-picker-choice>
+        <irk-picker-choice text="Constantly" value="4" ></irk-picker-choice>
+    </irk-value-picker-question-step>
+  </irk-task>
+
+    <irk-task>
+    <irk-image-choice-question-step id="cldeq7" title="Eye Dryness Q2" text="When your eyes felt dry, how intense was this feeling of dryness at the end of your wearing time? Please skip if you had no dryness at all.">
+      <<irk-image-choice text="Very Intense" value="5" type="image" normal-state-image="choice-verysad" selected-state-image="choice-verysad-sel"></irk-image-choice>
+      <irk-image-choice text="Intense" value="4" type="image" normal-state-image="choice-sad" selected-state-image="choice-sad-sel" ></irk-image-choice>
+        <irk-image-choice text="OK" value="3" type="image" normal-state-image="choice-OKface" selected-state-image="choice-OKface-sel"></irk-image-choice>
+      <irk-image-choice text="Not Very Intense" value="2" type="image" normal-state-image="choice-happy" selected-state-image="choice-happy-sel"></irk-image-choice>
+      <irk-image-choice text="Not At All Intense" value="1" type="image" normal-state-image="choice-veryhappy" selected-state-image="choice-veryhappy-sel"></irk-image-choice>
     </irk-image-choice-question-step>
   </irk-task>
 
      <irk-task>
-    <irk-value-picker-question-step id="eye8" title="Changeable, Blurry Vision Q1" text="During a typical day in the past 2 weeks, how often did your vision change between clear and blurry or foggy while wearing your contact lenses?" style="single" optional="false">
+    <irk-value-picker-question-step id="cldeq8" title="Changeable, Blurry Vision Q1" text="During a typical day in the past 2 weeks, how often did your vision change between clear and blurry or foggy while wearing your contact lenses?" style="single" optional="false">
       <irk-picker-choice text="Never" value="0" ></irk-picker-choice>
       <irk-picker-choice text="Rarely" value="1"></irk-picker-choice>
       <irk-picker-choice text="Sometimes" value="2" ></irk-picker-choice>
@@ -71,17 +78,17 @@
   </irk-task>
 
     <irk-task>
-    <irk-image-choice-question-step id="eye9" title="Changeable, Blurry Vision Q2" text="When your vision was blurry, how noticeable was the changable, blurry or foggy vision at the end of your wearing time? Please skip if it was not noticeable at all.">
-      <irk-image-choice text="Very Intense" value="5" normal-state-image="ion-android-sad" selected-state-image="ion-android-sad" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Intense" value="4" normal-state-image="ion-sad-outline" selected-state-image="ion-sad" type="smallicon"></irk-image-choice>
-        <irk-image-choice text="OK" value="3" normal-state-image="ion-eye" selected-state-image="ion-eye" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Not Very Intense" value="2" normal-state-image="ion-happy-outline" selected-state-image="ion-happy" type="smallicon"></irk-image-choice>
-      <irk-image-choice text="Not At All Intense" value="1" normal-state-image="ion-android-happy" selected-state-image="ion-android-happy" type="smallicon"></irk-image-choice>
+    <irk-image-choice-question-step id="cldeq9" title="Changeable, Blurry Vision Q2" text="When your vision was blurry, how noticeable was the changable, blurry or foggy vision at the end of your wearing time? Please skip if it was not noticeable at all.">
+      <irk-image-choice text="Very Intense" value="5" type="image" normal-state-image="choice-verysad" selected-state-image="choice-verysad-sel"></irk-image-choice>
+      <irk-image-choice text="Intense" value="4" type="image" normal-state-image="choice-sad" selected-state-image="choice-sad-sel" ></irk-image-choice>
+        <irk-image-choice text="OK" value="3" type="image" normal-state-image="choice-OKface" selected-state-image="choice-OKface-sel"></irk-image-choice>
+      <irk-image-choice text="Not Very Intense" value="2" type="image" normal-state-image="choice-happy" selected-state-image="choice-happy-sel"></irk-image-choice>
+      <irk-image-choice text="Not At All Intense" value="1" type="image" normal-state-image="choice-veryhappy" selected-state-image="choice-veryhappy-sel"></irk-image-choice>
     </irk-image-choice-question-step>
   </irk-task>
 
    <irk-task>
-    <irk-value-picker-question-step id="eye10" title="Closing Your Eyes" text="During a typical day in the past 2 weeks, how often did your eyes bother you so much that you wanted to close them?" style="single" optional="false">
+    <irk-value-picker-question-step id="cldeq10" title="Closing Your Eyes" text="During a typical day in the past 2 weeks, how often did your eyes bother you so much that you wanted to close them?" style="single" optional="false">
       <irk-picker-choice text="Never" value="0" ></irk-picker-choice>
       <irk-picker-choice text="Rarely" value="1"></irk-picker-choice>
       <irk-picker-choice text="Sometimes" value="2" ></irk-picker-choice>
@@ -91,7 +98,7 @@
   </irk-task>
 
      <irk-task>
-    <irk-value-picker-question-step id="eye11" title="Removing Your Lenses" text="How often during the past 2 weeks, did your eyes bother you so much while wearing your contact lenses that you felt as if you needed to stop whatever you were doing and take out your contact lenses?" style="single" optional="false">
+    <irk-value-picker-question-step id="cldeq11" title="Removing Your Lenses" text="How often during the past 2 weeks, did your eyes bother you so much while wearing your contact lenses that you felt as if you needed to stop whatever you were doing and take out your contact lenses?" style="single" optional="false">
       <irk-picker-choice text="Never" value="1" ></irk-picker-choice>
       <irk-picker-choice text="Less than once a week" value="2"></irk-picker-choice>
       <irk-picker-choice text="Weekly" value="3" ></irk-picker-choice>
@@ -102,6 +109,7 @@
   </irk-task>
 
   
+
   <irk-task>
     <irk-instruction-step id="end1" title="Thank you." text="You've completed the EyeReport questionnaire. " button-text="Done" />
   </irk-task>

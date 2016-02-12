@@ -75,6 +75,13 @@
 
 .controller('ResultsCtrl', ['irkResults', '$scope', function (irkResults, $scope) {
     $scope.results = irkResults.getResults();
+
+    $scope.CLDEQTotal = irkResults.sumIDResults("cldeq");
+}])
+
+
+.controller('AboutCtrl', ['$scope', function ($scope) {
+    
 }])
 
 .controller('ActiveTasksCtrl', function ($scope, $ionicModal) {
