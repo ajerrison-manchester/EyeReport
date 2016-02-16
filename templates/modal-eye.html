@@ -2,7 +2,20 @@
 
 <irk-ordered-tasks>
 
-  
+
+ 
+  <irk-task>
+    <irk-consent-review-step id="consent1" type="name" text="Please enter your name to indicate that you consent to participate in this study." signature-page-title="EyeReport Consent" signature-page-content="I agree to participate in this research study.">
+    	<irk-consent-name id="consentName1" title="Participant" given-name="" family-name="" requires-name="true"/>
+	  </irk-consent-review-step>
+  </irk-task>
+
+  <irk-task>
+    <irk-consent-review-step id="consent2" type="signature">
+      <irk-consent-signature id="consentSig1" signatureImage="" signatureDate="" signature-date-format="" requires-signature-image="true"/>
+    </irk-consent-review-step>
+  </irk-task>
+
 
   <irk-task>
     <irk-photo-step id="photo2" title="Photo" text="Please take a photograph of your eyes." button-text="Take Photo"  optional="false" />
